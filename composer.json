@@ -1,0 +1,54 @@
+{
+    "name": "nmc9/syncproof",
+    "description": "Proof of concept with some helper code to keep a server database and a local database in sync",
+    "keywords": [
+        "nmc9",
+        "syncproof"
+    ],
+    "homepage": "https://github.com/nmc9/syncproof",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nicholas Caruso",
+            "email": "nickc@diversifiedtechnology.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^7.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.2",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nmc9\\SyncProof\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nmc9\\SyncProof\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nmc9\\SyncProof\\SyncProofServiceProvider"
+            ],
+            "aliases": {
+                "SyncProof": "Nmc9\\SyncProof\\SyncProofFacade"
+            }
+        }
+    }
+}
