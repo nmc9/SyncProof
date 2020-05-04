@@ -1,9 +1,9 @@
 <?php
-use App\Models\Local\LocalCompany;
-use App\Models\Local\LocalOperation;
+use Nmc9\SyncProof\Tests\Models\Local\LocalCompany;
+use Nmc9\SyncProof\Tests\Models\Local\LocalOperation;
 use Illuminate\Support\Str;
 
-$factory->define(App\Models\Local\LocalWorkordersNew::class, function (Faker\Generator $faker, $attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Local\LocalWorkordersNew::class, function (Faker\Generator $faker, $attr) {
     $companyno = isset($attr['companyno']) ?: factory(LocalCompany::class)->create()->companyno;
     $create = isset($attr['companyno']) ? ["companyno" => $attr['companyno']] : [];
     return [

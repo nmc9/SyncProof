@@ -1,9 +1,9 @@
 <?php
-use App\Models\Local\LocalCompany;
+use Nmc9\SyncProof\Tests\Models\Local\LocalCompany;
 use Illuminate\Support\Str;
 
 
-$factory->define(App\Models\Local\LocalCustomer::class, function (Faker\Generator $faker,$attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Local\LocalCustomer::class, function (Faker\Generator $faker,$attr) {
 
     return [
         'customerno' => $faker->unique()->randomNumber(7),

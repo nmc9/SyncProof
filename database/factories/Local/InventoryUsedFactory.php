@@ -1,10 +1,10 @@
 <?php
-use App\Models\Local\LocalCompany;
-use App\Models\Local\LocalInventory;
-use App\Models\Local\LocalWorkorder;
+use Nmc9\SyncProof\Tests\Models\Local\LocalCompany;
+use Nmc9\SyncProof\Tests\Models\Local\LocalInventory;
+use Nmc9\SyncProof\Tests\Models\Local\LocalWorkorder;
 use Illuminate\Support\Str;
 
-$factory->define(App\Models\Local\LocalInventoryUsed::class, function (Faker\Generator $faker, $attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Local\LocalInventoryUsed::class, function (Faker\Generator $faker, $attr) {
 	$companyno = isset($attr['companyno']) ?: factory(LocalCompany::class)->create()->companyno;
 	$create = isset($attr['companyno']) ? ["companyno" => $attr['companyno']] : [];
 	return [

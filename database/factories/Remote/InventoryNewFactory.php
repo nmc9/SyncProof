@@ -1,9 +1,9 @@
 <?php
-use App\Models\Remote\RemoteCompany;
-use App\Models\Remote\RemoteWorkorder;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteCompany;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteWorkorder;
 use Illuminate\Support\Str;
 
-$factory->define(App\Models\Remote\RemoteInventoryNew::class, function (Faker\Generator $faker, $attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Remote\RemoteInventoryNew::class, function (Faker\Generator $faker, $attr) {
 	$companyno = isset($attr['companyno']) ?: factory(RemoteCompany::class)->create()->companyno;
 	$create = isset($attr['companyno']) ? ["companyno" => $attr['companyno']] : [];
 	return [

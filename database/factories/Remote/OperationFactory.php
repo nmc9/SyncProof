@@ -1,9 +1,9 @@
 <?php
-use App\Models\Remote\RemoteCompany;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteCompany;
 use Illuminate\Support\Str;
 
 
-$factory->define(App\Models\Remote\RemoteOperation::class, function (Faker\Generator $faker, $attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Remote\RemoteOperation::class, function (Faker\Generator $faker, $attr) {
     return [
         'operation' => $faker->unique()->text(9),
         'type' => $faker->randomNumber(),

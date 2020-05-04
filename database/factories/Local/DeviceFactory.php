@@ -1,6 +1,6 @@
 <?php
 
-$factory->define(App\Models\Local\LocalDevice::class, function (Faker\Generator $faker,$attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Local\LocalDevice::class, function (Faker\Generator $faker,$attr) {
     return [
         'androidid' => $faker->unique()->randomNumber(7),
         'password' => bcrypt($faker->password),

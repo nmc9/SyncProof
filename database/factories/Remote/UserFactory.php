@@ -1,8 +1,8 @@
 <?php
-use App\Models\Remote\RemoteCompany;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteCompany;
 use Illuminate\Support\Str;
 
-$factory->define(App\Models\Remote\RemoteUser::class, function (Faker\Generator $faker, $attr) {
+$factory->define(Nmc9\SyncProof\Tests\Models\Remote\RemoteUser::class, function (Faker\Generator $faker, $attr) {
     return [
         'username' => $faker->userName,
         'password' => $faker->password,

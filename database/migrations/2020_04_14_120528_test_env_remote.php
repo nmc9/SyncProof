@@ -13,7 +13,6 @@ class TestEnvRemote extends Migration
      */
     public function up()
     {
-        dd("ASD");
         if(app()->environment('testing')){
             Schema::connection('remote')->create('device', function(Blueprint $table)
             {

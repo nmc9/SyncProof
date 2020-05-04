@@ -1,17 +1,17 @@
 <?php
 
-use App\Models\Local\LocalCompany;
-use App\Models\Local\LocalCustomer;
-use App\Models\Local\LocalDevice;
-use App\Models\Local\LocalImage;
-use App\Models\Local\LocalInventory;
-use App\Models\Local\LocalInventoryNew;
-use App\Models\Local\LocalInventoryUsed;
-use App\Models\Local\LocalMeter;
-use App\Models\Local\LocalOperation;
-use App\Models\Local\LocalUser;
-use App\Models\Local\LocalWorkorder;
-use App\Models\Local\LocalWorkordersNew;
+use Nmc9\SyncProof\Tests\Models\Local\LocalCompany;
+use Nmc9\SyncProof\Tests\Models\Local\LocalCustomer;
+use Nmc9\SyncProof\Tests\Models\Local\LocalDevice;
+use Nmc9\SyncProof\Tests\Models\Local\LocalImage;
+use Nmc9\SyncProof\Tests\Models\Local\LocalInventory;
+use Nmc9\SyncProof\Tests\Models\Local\LocalInventoryNew;
+use Nmc9\SyncProof\Tests\Models\Local\LocalInventoryUsed;
+use Nmc9\SyncProof\Tests\Models\Local\LocalMeter;
+use Nmc9\SyncProof\Tests\Models\Local\LocalOperation;
+use Nmc9\SyncProof\Tests\Models\Local\LocalUser;
+use Nmc9\SyncProof\Tests\Models\Local\LocalWorkorder;
+use Nmc9\SyncProof\Tests\Models\Local\LocalWorkordersNew;
 use Illuminate\Database\Seeder;
 use Laracasts\TestDummy\Factory as TestDummy;
 

@@ -13,7 +13,7 @@
     stopOnFailure="false">
     <testsuites>
         <testsuite name="Proof">
-            <directory suffix="Test.php">./tests/Proof</directory>
+            <directory suffix="Test.php">./tests/Proof/</directory>
         </testsuite>
     </testsuites>
     <filter>

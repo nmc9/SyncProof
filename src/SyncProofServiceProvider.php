@@ -21,7 +21,7 @@ class SyncProofServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('syncproof.php'),
+                __DIR__.'/../config/config.php' => config_path('sync.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class SyncProofServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'syncproof');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'sync');
 
         // Register the main class to use with the facade
         $this->app->singleton('syncproof', function () {

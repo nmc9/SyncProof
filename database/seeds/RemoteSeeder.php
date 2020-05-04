@@ -1,17 +1,17 @@
 <?php
 
-use App\Models\Remote\RemoteCompany;
-use App\Models\Remote\RemoteCustomer;
-use App\Models\Remote\RemoteDevice;
-use App\Models\Remote\RemoteImage;
-use App\Models\Remote\RemoteInventory;
-use App\Models\Remote\RemoteInventoryNew;
-use App\Models\Remote\RemoteInventoryUsed;
-use App\Models\Remote\RemoteMeter;
-use App\Models\Remote\RemoteOperation;
-use App\Models\Remote\RemoteUser;
-use App\Models\Remote\RemoteWorkorder;
-use App\Models\Remote\RemoteWorkordersNew;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteCompany;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteCustomer;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteDevice;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteImage;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteInventory;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteInventoryNew;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteInventoryUsed;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteMeter;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteOperation;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteUser;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteWorkorder;
+use Nmc9\SyncProof\Tests\Models\Remote\RemoteWorkordersNew;
 use Illuminate\Database\Seeder;
 use Laracasts\TestDummy\Factory as TestDummy;
 
